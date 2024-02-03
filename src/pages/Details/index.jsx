@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
 import {Container} from "./styles";
 
+import { Button } from '../../components/Button';
+
 export function Details(){
     return(
        <Fragment>
             <Container>
-                <h1>hello</h1>
+                <Button title='Entrar' />
             </Container>
        </Fragment>
     )
