@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import {Container, Form, Background } from "./styles";
 
 import { FiMail, FiLock, FiUser } from 'react-icons/fi';
+import { FaArrowLeft } from "react-icons/fa6";
 import { Input } from '../../components/Input';
 
 import { Button } from '../../components/Button';
@@ -37,7 +38,8 @@ export function SignUp(){
 
                 <Button title='Entrar' />
 
-                <a href="#">Criar conta</a>
+                <a href="#" ><FaArrowLeft />Voltar para o login</a> 
+
                 </Form>
 
                 <Background />

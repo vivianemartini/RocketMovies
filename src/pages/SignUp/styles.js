@@ -32,8 +32,16 @@ export const Form = styled.div`
 
     > a {
         margin-top: 42px;
-        margin-left: 128px;
+        margin-left: 70px;
         color: ${({ theme }) => theme.COLORS.ROSE};
+
+        svg {
+            color: ${({ theme }) => theme.COLORS.ROSE};
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            margin-bottom: -2px;
+        }
     }
 `;
 
