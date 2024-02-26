@@ -27,6 +27,8 @@ export const Container = styled.div`
             color: ${({ theme }) => theme.COLORS.ROSE};
             font-size: 24px;
         }
+
+     
     }
 `;
 
