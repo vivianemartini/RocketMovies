@@ -57,3 +57,11 @@ export const Profile = styled.div`
         }
     }
 `
+
+export const Form = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+`
