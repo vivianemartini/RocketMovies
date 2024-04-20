@@ -2,11 +2,13 @@ import { Fragment } from 'react'
 import { Container } from './styles'
 import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Textarea } from '../../components/Textarea'
 import { Section } from '../../components/Section'
 import { NewNote } from '../../components/NewNote'
+import { Link } from 'react-router-dom'
 
 export function CreateMovie() {
   return (
@@ -14,10 +16,10 @@ export function CreateMovie() {
       <Header />
       <Container>
         <div className='comeback'>
-          <a href=''>
+          <Link to='/'>
             <FiArrowLeft />
             <span> Voltar</span>
-          </a>
+          </Link>
         </div>
 
         <div className='movie-info'>
@@ -33,13 +35,13 @@ export function CreateMovie() {
 
         <Section title='Marcadores'>
           <div className='tag-component'>
-            <NewNote value='React'/>
-            <NewNote isNew value='Novo marcador'/>
+            <NewNote value='Drama' />
+            <NewNote isNew value='Novo marcador' />
           </div>
         </Section>
 
         <div className='button-area'>
-          <Button title='Excluir Filme' />
+          <ButtonText title='Excluir Filme' />
           <Button title='Salvar alterações' />
         </div>
       </Container>

@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Container } from './Styles'
+import { Container } from './styles'
 
-export function Button({ icon, title, ...rest }) {
+export function ButtonText({ title, ...rest }) {
   return (
     <Container type='button' {...rest}>
-      {icon && <div>{icon}</div>}
       {title}
     </Container>
   )

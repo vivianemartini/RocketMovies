@@ -11,44 +11,63 @@ export const Container = styled.div`
 
   .comeback {
     span {
-      color: ${({ theme }) => theme.COLORS.ROSE};
+      color: ${({ theme }) => theme.COLORS.RED};
       bottom: 4px;
       left: 5px;
       position: relative;
     }
 
     svg {
-      color: ${({ theme }) => theme.COLORS.ROSE};
+      color: ${({ theme }) => theme.COLORS.RED};
       font-size: 16px;
     }
   }
 
   .movie-info {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
     gap: 19px;
     margin-top: 24px;
 
-    h1 {
-      font-size: 36px;
-      font-weight: 500;
-      color: ${({ theme }) => theme.COLORS.WHITE};
+    .movie {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: ${({ theme }) => theme.COLORS.WHITE};
+      }
+
+      strong {
+        color: ${({ theme }) => theme.COLORS.RED};
+      }
+
+      .stars {
+        > ul {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 10px;
+
+          svg {
+            color: ${({ theme }) => theme.COLORS.RED};
+            fill: ${({ theme }) => theme.COLORS.RED};
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
     }
 
-    .stars {
-      > ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 10px;
-
-        svg {
-          color: ${({ theme }) => theme.COLORS.ROSE};
-          fill: ${({ theme }) => theme.COLORS.ROSE};
-          width: 20px;
-          height: 20px;
-        }
+    .poster {
+      > img {
+        width: 150px;
+        height: 200px;
       }
     }
   }
@@ -72,7 +91,7 @@ export const Container = styled.div`
       gap: 8px;
 
       svg {
-        color: ${({ theme }) => theme.COLORS.ROSE};
+        color: ${({ theme }) => theme.COLORS.RED};
         font-size: 16px;
       }
 

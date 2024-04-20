@@ -5,6 +5,7 @@ import { Tag } from '../../components/Tag'
 import { Header } from '../../components/Header'
 
 import { FiArrowLeft, FiClock, FiStar } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export function MoviePreview() {
   return (
@@ -12,32 +13,45 @@ export function MoviePreview() {
       <Header />
       <Container>
         <div className='comeback'>
-          <a href=''>
+          <Link to='/createmovie'>
             <FiArrowLeft />
             <span> Voltar</span>
-          </a>
+          </Link>
         </div>
 
         <div className='movie-info'>
-          <h1>Interestellar</h1>
-          <div className='stars'>
-            <ul>
-              <li>
-                <FiStar />
-              </li>
-              <li>
-                <FiStar />
-              </li>
-              <li>
-                <FiStar />
-              </li>
-              <li>
-                <FiStar />
-              </li>
-              <li>
-                <FiStar />
-              </li>
-            </ul>
+          <div className='movie'>
+            <h1>Interestellar</h1>
+            <span className='director'>
+              Directed by <strong>Christopher Nolan</strong>
+            </span>
+            <span>2014</span>
+            <div className='stars'>
+              <ul>
+                <li>
+                  <FiStar />
+                </li>
+                <li>
+                  <FiStar />
+                </li>
+                <li>
+                  <FiStar />
+                </li>
+                <li>
+                  <FiStar />
+                </li>
+                <li>
+                  <FiStar />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className='poster'>
+            <img
+              src='https://i0.wp.com/www.heyuguys.com/images/2014/09/Interstellar-Poster.png'
+              alt='movie-poster'
+            />
           </div>
         </div>
 
