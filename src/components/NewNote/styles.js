@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  width: auto;
 
   background-color: ${({ theme, isNew }) =>
     isNew ? 'transparent' : theme.COLORS.BACKGROUND_700};
@@ -12,7 +13,6 @@ export const Container = styled.div`
   border: ${({ theme, isNew }) =>
     isNew ? `2px dashed ${theme.COLORS.GRAY_300}` : 'none'};
 
-  margin-bottom: 8px;
   border-radius: 10px;
   padding-right: 16px;
 
@@ -22,18 +22,16 @@ export const Container = styled.div`
   }
 
   .button-delete {
-    color: ${({ theme }) => theme.COLORS.ROSE};
+    color: ${({ theme }) => theme.COLORS.RED};
   }
 
   .button-add {
-    color: ${({ theme }) => theme.COLORS.ROSE};
+    color: ${({ theme }) => theme.COLORS.RED};
   }
 
   > input {
-    height: 56px;
-    width: auto;
-
-    display: flex;
+    width: 150px;
+    height: 40px;
     padding: 16px;
 
     color: ${({ theme }) => theme.COLORS.GRAY_300};

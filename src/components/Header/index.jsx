@@ -12,7 +12,7 @@ export function Header() {
         <InputLarger placeholder='Pesquisar pelo título' type='text' />
       </Form>
 
-      <Profile>
+      <Profile to='/profile'>
         <div>
           <strong>Viviane Martini</strong>
           <span>sair</span>

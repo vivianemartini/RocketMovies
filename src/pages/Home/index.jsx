@@ -1,20 +1,28 @@
-import { Fragment } from 'react';
-import {Container} from "./styles";
+import { Fragment } from 'react'
+import { Container } from './styles'
+import { Button } from '../../components/Button'
+import { Header } from '../../components/Header'
+import { FiPlus } from 'react-icons/fi'
 
-import { Button } from '../../components/Button';
-import { Header } from '../../components/Header';
+import { Link } from 'react-router-dom'
+import { Preview } from '../../components/Preview'
 
-/* import { FiPlus } from 'react-icons/ri' */
+export function Home() {
+  return (
+    <Fragment>
+      <Header />
+      <Container>
+        <main>
+          <div className='heading'>
+            <h1>Meus filmes</h1>
+            <Link className='link-btn'>
+              <Button icon={<FiPlus />} title='Adicionar filme' />
+            </Link>
+          </div>
 
-export function Home(){
-    return(
-       <Fragment>
-            <Container>
-                <Button title='Adicionar filme'>
-                 
-                </Button>
-                <Header/>
-            </Container>
-       </Fragment>
-    )
+          <Preview />
+        </main>
+      </Container>
+    </Fragment>
+  )
 }
