@@ -13,7 +13,7 @@ This application is a system that registers users and allows them to create, vie
 # Tech
 
 - ReactJS 
-- JS 
+- Typescript
 
 
 
